@@ -12,6 +12,18 @@ Follow these steps to set up Codeblocks with MinGW and GLUT:
 
 3. **Copy MinGW**
     - Copy the `MinGW` folder to `C:\`.
+    1. **Set Environment Variable**
+        - Go to `C:\MinGW\bin`, copy the path.
+        - Right-click on `This PC` > `Properties` > `Advanced system settings` > `Environment Variables`.
+        - Under `System variables`, find `Path`, select it, and click `Edit`.
+        - Click `New` and paste the copied path.
+        - Press `OK` to close all windows.
+
+    2. **Reset Compiler in Codeblocks**
+        - Open Codeblocks.
+        - Go to `Settings` > `Compiler`.
+        - Click `Reset Defaults`.
+        - The compiler should now detect the MinGW installation.
 
 4. **Copy GLUT DLL**
     - Copy `glut32.dll` from `glut 3.7.6` and paste it into `C:\Windows\SysWOW64`.
